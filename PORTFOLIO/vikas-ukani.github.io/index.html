@@ -14,7 +14,10 @@
         <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./style.css">
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="jquery.typist.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.5/typeit.js"></script> -->
+        <!-- <script src="jquery.typist.js"></script> -->
 
 
     </head>
@@ -62,13 +65,32 @@
             <div class="container  text-center">
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <p class="promo-title">
+                        <!-- <p class="promo-title">
                             <b style="color:#00ffe7">Vikas Ukani</b>
-                            
-                        </p>
+                        </p> -->
+                        <p class="promo-title"> <span class="name"></span>. </p>
+                        <script>
+                            var typed = new Typed('.name', {
+                                strings: [" UKANI ViKAS ", " <b style='color:#00ffe7'> Vikas Ukani</b>"],
+                                typeSpeed: 100,
+                                backDelay: 500,
+                                startDelay: 1000,
+                                showCursor: false,
+
+                            });
+                        </script>
                         <p>
-                            Hello, I'm <b style="color:#00ffe7">Vikas Ukani</b>. I'm a <b class="text-dark">Full Stack
-                                WebApp Developer.</b>
+                            Hello, I'm a <b class="text-dark post-name"></b>
+                            <script>
+                                var typed = new Typed('.post-name', {
+                                    strings: ["Frontend Developer.", "Full Stack Web-App Developer."],
+                                    typeSpeed: 50,
+                                    backDelay: 500,
+                                    startDelay: 1000,
+                                    showCursor: false,
+                                    
+                                });
+                            </script>
                             <br />
 
                             <small>
