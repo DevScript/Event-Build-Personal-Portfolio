@@ -1,0 +1,14 @@
+.Work {
+    padding: 10rem 2rem;
+    /* margin-top: 10rem; */
+}
+
+@media only screen and (max-width: 56.25em) {
+    .Work {
+        padding: 10rem 2rem;
+    }
+}
+
+.Icon {
+    color: #000 !important;
+}

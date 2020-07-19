@@ -1,0 +1,96 @@
+.NavBar {
+    width: 100%;
+    height: 8rem;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: transparent;
+    transition: all 0.3s ease-out;
+}
+
+.Icon {
+    height: 100%;
+    font-size: 4rem;
+    margin: auto 2rem;
+    color: white;
+}
+
+.NavBar ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    font-size: 2.2rem;
+    margin-right: 5%;
+}
+
+.NavBar ul li {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.NavBar ul p {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    outline: none;
+    padding: 2.5rem 1rem;
+    border-bottom: 4px solid transparent;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+.NavBar li p:before {
+    content: "";
+    width: 30px;
+    position: absolute;
+    border-bottom: 4px solid #3345A6;
+    bottom: 2rem;
+    right: 300px;
+    transition: 0.5s all;
+}
+
+.Hover {
+    border-bottom: 4px solid #3345A6 !important;
+}
+
+.NavBar li p:hover:before {
+    right: 0;
+}
+
+.NavBarUp {
+    transform: translateY(-100px);
+}
+
+.NavBarDown {
+    transform: translateY(0);
+    background-color: #2aa3f6 !important;
+    color: white !important;
+    box-shadow: 0 5px 15px -5px #00000070;
+}
+
+.NavBarDown p {
+    color: white !important;
+}
+
+.NavBarTop {
+    background-color: transparent !important;
+}
