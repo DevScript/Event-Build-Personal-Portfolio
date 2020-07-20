@@ -1,0 +1,17 @@
+.left {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 60%;
+    height: 40rem;
+    pointer-events: none;
+}
+
+.right {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 30%;
+    height: 40rem;
+    pointer-events: none;
+}

@@ -1,0 +1,13 @@
+.About {
+    padding: 10rem 2rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .About {
+        padding: 10rem 2rem;
+    }
+}
+
+.Icon {
+    color: #000 !important;
+}

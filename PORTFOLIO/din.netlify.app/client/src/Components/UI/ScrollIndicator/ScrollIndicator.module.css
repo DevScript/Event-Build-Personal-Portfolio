@@ -1,0 +1,48 @@
+/* Mouse Styling */
+
+.mouse {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    border-radius: 11px 11px 15px 15px;
+    border: 2px solid #fff;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* margin-left: -13px; */
+    /* padding: 2rem; */
+    cursor: pointer;
+    z-index: 100;
+}
+
+.mouse span {
+    display: block;
+    margin: 6px auto;
+    width: 2.4px;
+    height: 5px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}

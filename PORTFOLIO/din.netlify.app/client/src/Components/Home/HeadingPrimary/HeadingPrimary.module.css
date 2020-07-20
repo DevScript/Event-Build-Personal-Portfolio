@@ -1,0 +1,40 @@
+.HeadingPrimary {
+    width: 100%;
+    color: #3345A6;
+    font-weight: bold !important;
+    backface-visibility: hidden;
+    margin: auto;
+}
+
+.HeadingPrimarySub {
+    display: block;
+    padding: 0 2rem 0 2rem !important;
+    font-size: 2rem;
+    font-weight: bold !important;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+p {
+    z-index: 50;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .HeadingPrimarySub {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:56.25em) {
+    .HeadingPrimarySub {
+        font-size: 1.9rem;
+        /* margin-bottom: 2rem !important; */
+    }
+}
+
+.Container {
+    padding: 4rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}

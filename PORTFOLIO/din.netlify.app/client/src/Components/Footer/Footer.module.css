@@ -1,0 +1,26 @@
+.Footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 10rem;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.795), rgba(0, 0, 0));
+}
+
+.FooterHead {
+    width: fit-content;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 1rem !important;
+    margin: auto;
+}
+
+.FooterContent {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.Icon {
+    color: #fff !important;
+}

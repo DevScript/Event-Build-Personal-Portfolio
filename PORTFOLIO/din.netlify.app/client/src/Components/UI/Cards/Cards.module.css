@@ -1,0 +1,228 @@
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    /* display: flex; */
+}
+
+.row:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .row:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    .row {
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col-1-of-3 {
+    float: left;
+}
+
+.row .col-1-of-3:not(:last-child) {
+    margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .row .col-1-of-3:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    .row .col-1-of-3 {
+        width: 100% !important;
+    }
+}
+
+.row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.card__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+}
+
+.card__side--front {
+    background-color: #fff;
+}
+
+.card__side--back {
+    transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0);
+}
+
+.card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card__picture--1 {
+    background-image: linear-gradient(to right bottom, #ffbb006c, #ff7730), url('/Cards/card-1.jpg');
+}
+
+.card__picture--2 {
+    background-image: linear-gradient(to right bottom, #ffbb006c, #ff7730), url('/Cards/card-2.jpg');
+}
+
+.card__picture--3 {
+    background-image: linear-gradient(to right bottom, #ffbb006c, #ff7730), url('/Cards/card-3.jpg');
+}
+
+.card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+}
+
+.card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.card__heading-span--1 {
+    background-image: linear-gradient(to right bottom, rgba(4, 196, 217, 0.486), rgba(51, 68, 166, 0.384));
+}
+
+.card__details {
+    padding: 3rem;
+    width: 80%;
+    /* margin-top: 4rem !important; */
+    margin: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1rem;
+    word-spacing: 0;
+    line-height: 4rem;
+}
+
+.card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.card__price-box {
+    text-align: center;
+    color: #fff;
+    /* margin-bottom: 8rem; */
+}
+
+.card__price-only {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 56.25em),
+only screen and (hover: none) {
+    .card {
+        height: auto;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+    }
+    .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .card__side--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .card:hover .card__side--front {
+        transform: rotateY(0);
+    }
+    .card__details {
+        padding: 1rem 3rem;
+    }
+    .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem;
+    }
+    .card__price-box {
+        margin-bottom: 3rem;
+    }
+    .card__price-value {
+        font-size: 4rem;
+    }
+    .Icon:hover {
+        transform: none !important;
+    }
+}
+
+.Icon {
+    color: #000 !important;
+    font-size: 10rem;
+    transition: all .1s linear;
+}
+
+.Icon:hover {
+    transform: scale(1.2);
+}

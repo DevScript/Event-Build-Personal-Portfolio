@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+
+/* 0 - 600px: Phone 600 - 900px: Tablet portrait 900 - 1200px: Tablet landscape [1200 - 1800] is where our normal styles apply 1800px + : Big desktop $breakpoint arguement choices: - phone - tab-port - tab-land - big-desktop ORDER: Base + typography > general layout + grid > page layout > components 1em = 16px */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Cabin", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: url("/SVG/bg.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 56.25em) {
+    body {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: #2aa3f6;
+    color: white;
+}
+
+.come-in {
+    display: inline !important;
+    transform: translateY(20rem);
+    animation: come-in 1.5s ease forwards;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .come-in {
+        transform: translateY(20rem);
+        animation: come-in 1.5s ease forwards;
+    }
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+@keyframes come-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.module {
+    opacity: 0;
+}
