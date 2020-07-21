@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            margin: 2px;
+            cursor: pointer;
+            background: #607d8b;
+            border: none;
+            color: white;
+        }
+        
+        .textview {
+            width: 213px;
+            height: 40px;
+            margin: 5px;
+            color: #607d8b;
+            font-size: large;
+        }
+        
+        .main {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translateX(300%)translateY(50%);
+            /* 5,35*/
+        }
+        
+        .bg {
+            background: linear-gradient(to right, #e91e63, #3f51b5);
+            height: 1000px;
+        }
+        
+        h3 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+        }
+        /* table {
+    border: 2px solid black;
+    text-align: center;
+} */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="newCalc.css"> -->
+    <script>
+        function insert(num) {
+            document.form.textview.value = document.form.textview.value + num;
+        }
+
+        function equal(num) {
+            var exp = document.form.textview.value;
+            if (exp) {
+                document.form.textview.value = eval(exp);
+            }
+        }
+
+        function clean(num) {
+            document.form.textview.value = "";
+        }
+
+        function back(num) {
+            var exp = document.form.textview.value;
+            document.form.textview.value = exp.substring(0, exp.length - 1);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <marquee width="50%" direction="right" height="50%"> -->
+    <h3>This Calculator is Designed and Coded by <b>Bhavesh Garg.</b></h3>
+    <!-- </marquee> -->
+    <!-- <marquee width="40%" direction="left" height="30%">
+        <strong>Bhavesh Garg.</strong>.
+    </marquee> -->
+    <div class="bg"></div>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview" placeholder="ENTER YOUR NUMBER">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button" type="button" value="C" onclick="clean()"></td>
+                <td><input class="button" type="button" value="<" onclick="back()"></td>
+                <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+                <td><input class="button" type="button" value="*" onclick="insert('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+                <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+                <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+                <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+                <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+                <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+                <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+                <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+                <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+                <td rowspan="5"><input class="button" style="height:106px;" type="button" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+                <td colspan=2><input class="button" style="width: 106px;" type="button" value="0" onclick="insert(0)"></td>
+                <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
