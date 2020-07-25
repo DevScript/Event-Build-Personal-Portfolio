@@ -1,0 +1,77 @@
+#projects{
+    background: url('../images/Projects.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    z-index: 1;
+
+
+   &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        background-color: rgba(61, 69, 112, 0.658);
+    }
+
+    & .project-heading{
+        color: white;
+        opacity: 1;
+        z-index: 1;
+        text-decoration: underline;
+    }
+    
+}
+
+.mycards{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    & .card{
+        box-shadow: 0 17px 25px rgb(61, 49, 49);
+        width: 85%;
+        transition: all 0.4s linear;
+
+        &:hover{
+            transform: scale(105%);
+        }
+    }
+
+}
+
+.card-body{
+    border-top: 1px solid lightgrey;
+    
+    & p{
+        min-height: 100px;
+    }
+}
+
+.card-title{    
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+@media screen and (max-width:671px)
+{
+    .mycards{
+
+        & .card{
+            width: 80%;
+            transition: all 0.4s linear;
+
+        }
+    }   
+}
+

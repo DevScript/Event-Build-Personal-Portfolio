@@ -1,0 +1,27 @@
+@import "./Navbar";
+@import "./Intro";
+@import "./About";
+@import "./Education";
+@import "./Projects";
+@import "./Contact";
+@import "./Footer";
+
+* , body ,input, select {
+    font-family: 'Open Sans',monospace;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+h5{
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    overflow-x: hidden;
+}
