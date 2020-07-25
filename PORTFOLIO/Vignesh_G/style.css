@@ -1,0 +1,205 @@
+        html {
+            min-height: 100%;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100%;
+            
+        }
+
+    /*Navbar*/
+
+        .navbarcolor {
+            background-color: #495c73;
+        }
+
+    /*Photosection*/
+
+        .jumbotronmod {
+            background: none;
+        }
+
+        .mypic {
+            margin-top: -24px;
+            margin-bottom: -24px;
+            margin-left: -25px;
+        }
+
+        .fit_quote {
+            font-family: 'Courgette', cursive;
+        }
+
+        .myname {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .nameline {
+            border: 0.0001em solid black;
+            width: 97%;
+        }
+
+        .myskills {
+            font-family: 'Roboto', sans-serif;
+        }
+
+/*Content*/
+
+        .content_text {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .doublequotes {
+            font-family: 'Domine', serif;
+        }
+
+/*Instructors*/
+        .heading_text {
+            font-family: 'Rowdies', cursive;
+        }
+
+        .jumbotron_instructors {
+            width: 950px;
+            height: 495px;
+        }
+
+/*Helping_hands*/
+        .helping_hands {
+            height: 350px;
+        }
+
+        .sep {
+            margin-bottom: 25px;
+        }
+
+        .jumbotron_helpinghands {
+            height: 280px;
+            width: 100%;
+            background-size: 100% 100%;
+            color: snow;
+            box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .jumbotron_helpinghands img {
+            transition: all .6s;
+        }
+
+        .jumbotron_helpinghands img:hover {
+            transform: scale(1.2);
+        }
+
+
+        .helping_hands {
+            background-image: url(https://i.ibb.co/MVkMGxp/helping-hand.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 315px;
+            width: 610px;
+            margin: 0 auto;
+            margin-top: -80px;
+            border-radius: 4px;
+        }
+
+        .helping_tint {
+            background-color: rgba(0, 0, 0, 0.5);
+
+            top: 0;
+            left: 0;
+            width: 610;
+            height: 159px;
+            border-radius: 4px;
+        }
+
+        .helping_handsimg1 {
+            width: 125px;
+            height: 125px;
+            border-radius: 100%;
+        }
+
+        .helping_handsimg2 {
+            width: 120px;
+            height: 120px;
+        }
+
+        .helping_handsimg3 {
+            width: 190px;
+            height: 80px;
+        }
+
+/*Projects*/
+         .project_bar {
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            background-color: black;
+        }
+
+        .project_img {
+            height: 80px;
+            width: 80px;
+            margin-left: 10px;
+        }
+
+        .carousel {
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-item img {
+            width: 700px;
+            height: 500px;
+        }
+
+
+/*Get_in_touch*/
+            
+        .jumbotron_bottom {
+            height: 240px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .phone {
+            width: 26px;
+            height: 30px;
+        }
+
+        .mail {
+            width: 20px;
+            height: 22px;
+            margin-left: 5px;
+        }
+
+        .location {
+            margin-top: -5px;
+            width: 30px;
+            height: 25px;
+        }
+
+        .icons img {
+            margin-top: 20px;
+            margin-right: 10px;
+            transition: all .3s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        #contact {
+            border-top: 1px solid white;
+
+            transition: all 0.5s;
+        }
+
+        #contact:target {
+            border-top: 8px solid RGBA(255, 149, 0, 1);
+            border-bottom: 8px solid RGBA(0, 196, 0, 0.85);
+        }
+
+        .contact_text {
+            font-family: 'Mulish', sans-serif;
+        }
