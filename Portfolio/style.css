@@ -1,0 +1,117 @@
+*, body, input, select {
+  font-family: 'Courier Prime', monospace;
+}
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  min-height: 59px;
+}
+
+.intro-bg {
+  background: url('https://i.imgur.com/011taPQ.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 635px;
+  position: relative;
+}
+
+.intro-bg .header-area {
+  position: absolute;
+  z-index: 5;
+  text-shadow: 0 0 2px #fff;
+  top: 50%;
+  left: 70%;
+  transform: translate(-60%, -50%);
+  text-align: center;
+  width: 500px;
+  height: 200px;
+
+}
+
+.intro-bg::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.intro-bg .socials a {
+  color: #000;
+  padding: 5px;
+  font-size: 1.8em;
+  transition: all 0.5s linear;
+}
+
+.intro-bg .socials a:hover {
+  color: #f90;
+}
+
+.intro-about-pic {
+  text-align: center;
+  padding: 25px;
+  transform: translate(-10%, 30%)
+}
+.intro-about-pic figure {}
+.intro-about-pic figure img {
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #000;
+}
+.intro-about-pic figure figcaption {
+  font-size: 1.2em;
+  font-weight: 300;
+
+}
+
+.intro-about-text{
+  padding: 25px;
+  font-size: 16.5px;
+  transform: translate(-10%, 30%)
+}
+
+.intro-about-text h2 {
+  font-weight: 500;
+  font-family: 'Montserrat';
+  text-shadow: 0 0 1px #666;
+  text-align: center;
+}
+
+.intro-about-text p {
+  line-height: 2;
+}
+
+@media screen and (max-width: 575px) {
+  .intro-about-pic figure img {
+    margin-bottom: 0;
+  }
+  .intro-about-pic figure figcaption {
+    display: none;
+  }
+}
+
+.intro .container {
+  min-height: 635px;
+}
+
+
+.intro-bg .header-area .typewrite {
+  font-family: 'Courier Prime', monospace;
+}
+
+.about-edu {
+  min-height: 635px;
+}
+
+.about-edu h1 {
+  text-align: center;
+  padding: 230px 0;
+}
+
+

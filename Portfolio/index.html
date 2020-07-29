@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hari Hara Sudhan Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="light-theme.css" rel="stylesheet" id="theme-link">
+    <script src="Typing Effect.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hari Hara Sudhan S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+            <li class="nav-item disabled">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item disabled">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item btn-toggle active dark">
+              <a class="nav-link" href="#">Dark/Light Mode</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>  
+    <section id="home" class="intro-bg">
+      <div class="header-area">
+        <h5>Hola, I'm</h5>
+        <h1>Hari Hara Sudhan S</h1>
+        <p>I'm a <a href="" class="typewrite" data-period="2000" data-type='[ "Certified Ethical Hacker", "RedHat Certified System Administrator", "Cisco Certified Network Associate", "Upcoming Web Developer" ]'></a></p>
+        <div class="text-center socials">
+          <a href="https://www.facebook.com/hari.suriya.520/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/hariharasuhdans520/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://github.com/HariSuriya520"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/_ironstrange520_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="intro">
+      <div class="container">
+          <div class="row">
+          <div class="col-12 col-sm-6 intro-about-pic">
+            <figure>
+              <img src="https://i.imgur.com/uBQGOW1.jpg" alt="Hari Hara Sudhan">
+              <figcaption>Hari Hara Sudhan S</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-sm-6 intro-about-text">
+            <h2>About Me</h2>
+            <p>People call me The Tech Guy. I'm a Cynophilist, and a GearHead. 
+              I'm a EC-Council Certified Ethical Hacker, RedHat Certified System Administrator and Upcoming Web Developer.<br>
+              I am currently pursuing B.E. Automobile final year at Karpagam College of Engineering. Even though I'm from a Mechanical stream, I've much interests in Web Developement and Cyber-Security. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="Education" class="about-edu">
+        <h1>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Under Construction...", "Coming Soon!...", "Stay Tuned..." ]'></a>
+        </h1>
+      </div>
+    </section>
+    <script>
+      const btn = document.querySelector(".btn-toggle");
+      const theme = document.querySelector("#theme-link");
+      btn.addEventListener("click", function() {
+        // Swap out the URL for the different stylesheets
+        if (theme.getAttribute("href") == "light-theme.css") {
+          theme.href = "dark-theme.css";
+        } else {
+          theme.href = "light-theme.css";
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  </body>
+</html>
