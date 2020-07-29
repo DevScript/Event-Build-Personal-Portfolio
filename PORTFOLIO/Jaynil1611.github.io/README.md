@@ -2,7 +2,7 @@
 
 This wesbite is a personal portfolio built using front-end technolgies like .
 <br/>
-Check out the demo here : [Portfolio](https://jaynil1611.github.io/)
+Check out the demo here-> [Portfolio](https://jaynil1611.github.io/)
 
 ## Screen
 
