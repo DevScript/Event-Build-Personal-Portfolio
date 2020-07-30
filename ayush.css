@@ -1,0 +1,195 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  .about{
+    text-allign:center;
+  }
+  .aboutw{
+    line-height:2;
+    padding:5px;
+    text-allign:center;
+  }
+  .masthead {
+      height: 100vh;
+      min-height: 300px;
+      background-image: url('https://github.com/ayushmohanty24/Portfoliod/blob/master/devscript/LRM_EXPORT_615213494220014_20200602_001258565.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+  .ab{
+   
+    text-align: left;
+    line-height: 3;
+  }
+  
+  .progress-bar {
+    width: 0;
+    -webkit-animation: progress 1.5s ease-in-out forwards;
+            animation: progress 1.5s ease-in-out forwards;
+  }
+  .progress-bar .title {
+    opacity: 0;
+    -webkit-animation: show 0.35s forwards ease-in-out 0.5s;
+            animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+  
+  @-webkit-keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+  @keyframes show  {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.githubBtn{
+    background: #101111;
+}
+
+.githubBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add twitter icon */
+}
+
+.githubBtn:hover{
+      color: #0b0c0c;
+      background: #fff;
+}
+
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+}
+
+
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #dd1818;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f16d"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #df2911;
+      background: #fff;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+}
