@@ -1,0 +1,57 @@
+.jumbotron.jumbotron-main {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background: #6819e8;
+  background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
+  background: -webkit-linear-gradient(left, #6819e8 0%,#7437d0 35%,#615fde 68%,#6980f2 100%);
+  background: linear-gradient(to right, #6819e8 0%,#7437d0 35%,#615fde 68%,#6980f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6819e8', endColorstr='#6980f2',GradientType=1 );
+}
+
+.jumbotron.jumbotron-main hr {
+  border-width: 1px 0px;
+  border-style: dotted none;
+  border-color: rgba(255, 255, 255, 0.35);
+  -moz-border-top-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  border-image: none;
+  width: 49px;
+  height: 4px;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
+
+.jumbotron.jumbotron-main a {
+  color: #fff;
+}
+
+.center-vertically {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.center-vertically-holder {
+  display: table;
+  height: 100%;
+}
+

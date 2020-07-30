@@ -1,0 +1,37 @@
+#box-1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixlib=rb-0.3.5&amp;s=00ba0650babed705e16f3018063ec72f&amp;auto=format&amp;fit=crop&amp;w=1052&amp;q=80);
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+#box-2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=3072165d9511cc36da110d3416d6c44d&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+#box-3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=74be18f074e19e06a51221f0f09969df&amp;auto=format&amp;fit=crop&amp;w=1052&amp;q=80");
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: arial black;
+  font-size: 50px;
+  color: white;
+  margin: 0px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
