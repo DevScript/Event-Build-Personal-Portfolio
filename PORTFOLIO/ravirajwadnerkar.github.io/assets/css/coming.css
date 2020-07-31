@@ -1,0 +1,79 @@
+body {
+    background-color: #0a183d;
+  }
+  
+  .mainbox {
+    background-color: #0a183d;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    color: #ffffff;
+    position: relative;
+  }
+  
+    .err {
+      color: #ffffff;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 11rem;
+      position:absolute;
+      left: 20%;
+      top: 8%;
+    }
+  
+  .far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: #ffffff;
+  }
+  
+   .err2 {
+      color: #ffffff;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 11rem;
+      position:absolute;
+      left: 68%;
+      top: 8%;
+    }
+  
+  .msg {
+      text-align: center;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1.6rem;
+      position:absolute;
+      left: 16%;
+      top: 45%;
+      width: 75%;
+    }
+  
+  a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .site-btn {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 125px;
+    padding: 23px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background: #fc0254;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+  
+  a:hover {
+    text-decoration: underline;
+  }
