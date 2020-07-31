@@ -1,0 +1,28 @@
+#navbar{
+    background-color: rgba(35, 35, 35, 0.9);
+    min-height: 63px;
+
+    & li:hover{
+        border-bottom: 1px solid white;
+    }
+    & .active-link{
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (max-width:991px)
+{
+    #navbar{
+        min-height: unset;
+
+        & li:hover{
+            border-bottom: unset;
+        }
+    }
+
+    & .active-link{
+        border-bottom: unset;
+    }
+}
+
+

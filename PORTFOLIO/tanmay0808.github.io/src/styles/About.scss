@@ -1,0 +1,121 @@
+#about{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    
+    & h5{
+        text-align: center;
+        padding-bottom: 7px;
+        text-decoration: underline;
+        margin-bottom: unset;
+    }
+}
+.profile-pic{
+    width: 200px;
+    border-radius: 50%;
+}
+.about-img{
+    padding: 30px 0px;
+    display: flex;
+    align-content: center;
+
+    & img{
+        align-self: center;
+        max-width: 11rem;
+        max-height: 11rem;
+        margin-left: 30px;
+        box-shadow: 0 3px 15px grey;
+    }
+}
+.about-info{
+    padding: 30px 2%;
+}
+
+.about-profile-section{
+    padding: 30px 5%;
+}
+.about-skill-section{
+    padding: 30px 5%;
+
+    & ul{
+        list-style: none;
+        padding-left: 0;
+    }
+}
+/* SKILL SECTIONS*/
+.skill-section-frameworks,
+.skill-section-languages,
+.skill-section-database,
+.skill-section-workflow {
+    width: 50%;
+}
+
+.fa-laptop{
+    color: navy;
+}
+.info-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+
+    & li{
+        margin: 20px 0px;
+    }
+}
+
+.button-section{
+    padding: 30px 0px;
+}
+
+.about-section-buttons{
+    width: 50%;
+    
+    & a{
+        width: 100%;
+        padding: 7px 0px;
+        border-radius: 20px;
+    }
+}
+
+
+@media screen and (max-width:980px)
+{
+    .about-img{
+        & img{
+            margin-left: unset;
+        }
+    }
+}
+
+@media screen  and(max-width:570px)
+{
+    .about-info{
+        padding: 0px 5% 30px 5%;
+        text-align: center;
+    }
+    .about-section-buttons{
+        width: 80%;
+    }
+    .about-img{
+    
+        & img{
+            max-width: 9rem;
+            max-height: 9rem;
+        }
+    }
+    .skill-section-frameworks,
+    .skill-section-workflow {
+        padding-left: 5px;
+    }
+    .skill-section-languages,
+    .skill-section-database{
+        padding-left: 15px;
+    }
+
+    .skill-section-frameworks,
+    .skill-section-languages,
+    .skill-section-database,
+    .skill-section-workflow {
+        overflow-x: scroll;
+    }
+}

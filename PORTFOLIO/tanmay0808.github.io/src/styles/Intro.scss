@@ -1,0 +1,123 @@
+#intro{
+    background: url('../images/Intro.png') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-attachment: fixed;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+}
+
+.content{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    text-shadow: 0 0 2px #fff;
+
+    & h1{
+      min-width: 80vw;
+      font-size: 4rem;
+      margin: 10px 0px;
+    }
+}
+
+//Social Media Icons
+.socials{
+    list-style: none;
+
+    & a{
+        padding-top: 4px;
+        padding-left: 1px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 0 2px;
+        text-align: center;
+        color: #fff;
+        border: 1px solid #e4e4e4;
+        border-radius: 50%;
+
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.more-about-me{
+  
+  & a{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%,-15%);
+        line-height: 33px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 0 2px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+  }
+}
+
+//TypeWriter Cursor
+.cursor {
+    display: inline-block;
+    position: relative;
+  }
+  .cursor::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    right: -4px;
+    top: -3px;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    animation: cursor-animation 1.5s step-end infinite;
+  }
+  @keyframes cursor-animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.whoiam{
+  height: 40px;
+}
+@media screen and (max-width:671px)
+{
+  .content{
+    transform: translate(-50%,-60%);
+
+    & h1{
+      min-width: 80vw;
+      font-size: 3rem;
+      margin: 10px 0px;
+    }
+  }
+}
